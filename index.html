@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Aakash Test</title>
+
+  <!-- Adding local bootstrap css files into our code from bootstrap folder -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.rtl.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.rtl.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.rtl.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.rtl.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.rtl.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.rtl.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.min.css">
+
+  <!-- Adding main style.css file for our website -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Adding Favicon to our web application -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+
+
+</head>
+<!-- ------------------------------------------------------------------------------------------------->
+<body>
+  
+
+  <section>
+    <!-- As a heading -->
+    <nav class="navbar bg-info-subtle">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1" style="color: rgb(47, 47, 47); margin-left: 110px;">Hello I'm Aakash !!!</span>
+      </div>
+    </nav>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <section>
+          <canvas id="myCanvas" width="500" height="500" style="border: 2px solid #d3d3d3; margin-top: 20px; border-radius: 20px;">
+            Your Browser Does Not Support HTML Canvas !
+          </canvas>
+        </section>
+      </div>
+
+      <div class="col-lg-6">
+        <section>
+          <div class="text-center">
+            <button onclick="moveRight()" class="Controller_btn">
+              <img class="Controller_btn_img" src="images/right-arrow.png" alt="">
+            </button>
+
+            <button onclick="moveLeft()" class="Controller_btn">
+              <img class="Controller_btn_img" src="images/left-arrow.png" alt="">
+            </button>
+
+            <button onclick="moveUp()" class="Controller_btn">
+              <img class="Controller_btn_img" src="images/up-arrow.png" alt="">
+            </button>
+
+            <button onclick="moveDown()" class="Controller_btn">
+              <img class="Controller_btn_img" src="images/down-arrow.png" alt="">
+            </button>
+          </div>
+        </section>
+
+        <section class="inputBox" style="margin-top: 30px;">
+          <div class="text-center">
+
+            <input id="Start_X"       type="number" placeholder="Starting Point X" class="form-control mb-2">
+            <input id="Start_Y"       type="number" placeholder="Starting Point Y" class="form-control mb-2">
+            <input id="Start_Time"    type="number" placeholder="Time in Secs"     class="form-control mb-2">
+            <input id="Start_Speed"   type="number" placeholder="Speed"            class="form-control mb-2">
+
+
+            <div>
+              <input type="checkbox" id="OnlyX_axis" checked>
+              <label for="OnlyX_axis"> X axis</label><br>
+              
+              <input type="checkbox" id="OnlyY_axis" checked>
+              <label for="OnlyY_axis"> Y axis</label><br>
+            </div>
+
+            <button class="btn btn-outline-success" style="margin-top: 20px;" onclick="Submit_Run()">SUBMIT & RUN</button>
+            
+            <p id="warning_checkbox" style="margin-top: 10px;color: red; display: none;">SWITCHING TO DEFAULT CONDITION AS NO CHECKBOX IS SELECTED.</p>
+          
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+<!-- ------------------------------------------------------------------------------------------------->
+
+
+
+   <!-- Adding main javascript file from javascript folder which is script.js--> 
+   <script src="javascript/script.js"></script>
+
+   <!-- Adding local bootstrap js files into our code from bootstrap folder -->
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="bootstrap/js/bootstrap.js"></script>
+   <script src="bootstrap/js/npm.js"></script>
+   <script src="bootstrap/js/bootstrap.bundle.js"></script>
+   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="bootstrap/js/bootstrap.esm.js"></script>
+   <script src="bootstrap/js/bootstrap.esm.min.js"></script>
+
+</body>
+</html>
